@@ -9,6 +9,19 @@
     /* default for xs */
 }
 
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.contact-item {
+    cursor: pointer;
+}
+
 div>li {
     list-style-type: none;
     padding: 0;
@@ -80,16 +93,23 @@ div>li>a {
         display: block;
     }
 }
+
 @media (max-width: 560px) {
-    .footer-links, .footer-socials{
+
+    .footer-links,
+    .footer-socials {
         gap: 0 !important;
     }
 }
+
 @media (max-width: 500px) {
-    .footer-links, .footer-socials{
+
+    .footer-links,
+    .footer-socials {
         flex-wrap: wrap;
     }
-    .footer{
+
+    .footer {
         padding: 2.4rem;
     }
 }
